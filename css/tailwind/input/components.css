@@ -1,0 +1,73 @@
+
+@layer components {
+
+  .anchor-default {
+    @apply 
+      text-prim-400 
+      hover:text-prim-300
+      visited:text-prim-500;
+  }
+
+  .input-base {
+    @apply block w-full px-6 py-4 my-2;
+  }
+
+  .input-colors {
+    @apply 
+      text-sec-400
+      bg-sec-700
+      border
+      border-sec-600
+      focus:border-prim-400;
+  }
+
+  .input-control {
+    @apply input-base input-colors;
+  }
+
+  .checkbox-control {
+    @apply
+      input-base
+      flex
+      items-center
+      leading-none
+      hover:text-sec-300
+      cursor-pointer;
+  }
+
+  .checkbox-input {
+    @apply 
+      p-2
+      mr-2
+      border
+      border-sec-300
+      checked:bg-prim-400
+      active:bg-sec-500
+      appearance-none
+      transition-colors
+      duration-300;
+  }
+
+  .button {
+    @apply uppercase font-bold text-sm px-6 py-3 my-2;
+  }
+
+  .button-prim {
+    @apply 
+      button
+      bg-prim-600
+      hover:bg-prim-500
+      active:bg-prim-700
+      text-sec-200
+      hover:text-sec-100;
+  }
+
+  .button-sec {
+    @apply 
+      button
+      bg-sec-800
+      hover:bg-sec-700
+      active:bg-sec-600;
+  }
+
+}

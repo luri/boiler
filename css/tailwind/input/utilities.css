@@ -1,0 +1,11 @@
+
+@layer utilities {
+
+  .animate__animated {
+    --animate-duration: 0.215s;
+    --animate-delay: 0s;
+
+    animation-timing-function: ease;
+  }
+
+}
